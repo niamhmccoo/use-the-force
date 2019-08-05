@@ -11,7 +11,7 @@ nav * {
 input {
   display: block;
   margin: auto;
-  width: 50%;
+  width: 30em;
   padding: 1em;
   border: solid 1px #aaa;
   border-radius: 5px;
@@ -48,5 +48,8 @@ button:hover {
   *,
   .App {
     margin: unset;
+  }
+  input {
+    width: 60%;
   }
 }
