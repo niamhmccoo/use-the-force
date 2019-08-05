@@ -15,11 +15,38 @@ input {
   padding: 1em;
   border: solid 1px #aaa;
   border-radius: 5px;
+  text-align: left;
+  font-size: 1em;
 }
 
 .App {
   margin: 2em 1em;
 }
+
 .results {
   margin-top: 3em;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+button {
+  border: solid 1px #aaa;
+  border-radius: 5px;
+  padding: 0.5em;
+  font-size: 0.8em;
+  margin: 1.5em 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  *,
+  .App {
+    margin: unset;
+  }
 }

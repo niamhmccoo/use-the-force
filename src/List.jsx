@@ -33,7 +33,7 @@ class List extends React.Component {
                     people.map((p) => { // 4. Here we're mapping over all of the 'people' array items, then returning the character name; a property inside the array. Then we pass that item to 'CharInfo' so we can use it independently, taking info from each character in the CharInfo.jsx file.
                         console.log(p);
                         return (
-                            <div class="results">
+                            <div className="results">
                                 <h1 className="char-name">{p.name}</h1>
                                 <CharInfo charInfo={p} />
                             </div>
