@@ -10,7 +10,7 @@ class App extends React.Component {
     this.state = {
       people: [],
     }
-    this.getPeople = this.getPeople.bind(this); // can do this with an arrow function too - note: why do it here?
+    this.getPeople = this.getPeople.bind(this); 
   }
 
   // 2. Once we make an API request we use that info to change the component's state & populate the people property in the App class above, with whatever came back from the API request, i.e. 'people: response.data.results' below:
