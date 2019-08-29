@@ -19,14 +19,14 @@ class App extends React.Component {
     return axios.get("https://swapi.co/api/people/")
       .then((response) => {
         console.log(response.data.results);
-        this.setState({people: response.data.results})
+        this.setState({people: response.data.results}) // Changing the component's state
       })
       .catch((error) => {
         console.error(error);
       })
   }
 
-  componentDidMount() {
+  componentDidMount() { // Telling React it needs to re-render the getPeople() function with the newly updated state
     this.getPeople()
   }
 
